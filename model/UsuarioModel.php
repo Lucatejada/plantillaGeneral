@@ -24,7 +24,9 @@ class UsuarioModel extends Conexion
 
     public function getPersonas()
     {
-        $sql = "SELECT p.dni, p.nombre, p.apellido, p.email, date_format(p.nacimiento, '%d/%m/%Y') as fecha_nacimiento, g.nombre as tipo_genero, p.celular from personas p, genero g WHERE p.id_genero2 = g.id ";
+        $sql = "SELECT p.dni, p.nombre, p.apellido, p.email, date_format(p.nacimiento, '%d/%m/%Y') as fecha_nacimiento, g.nombre as tipo_genero, p.telefono, d.nombre AS nombre_distrito 
+        from personas p, genero g, distritos d 
+        WHERE p.id_genero2 = g.id & p.id_distritos2 = d.id;";
         $result = $this->conexion->query($sql);
         $listPersonas = $result->fetch_all(MYSQLI_ASSOC);
         return $listPersonas;

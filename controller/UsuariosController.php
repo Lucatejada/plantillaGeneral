@@ -46,10 +46,10 @@ class UsuariosController
         $correo = $_POST['correo'];
         $genero = $_POST['genero'];
         $nacimiento = $_POST['nacimiento'];
-        $celular = $_POST['celular'];
+        $telefono = $_POST['telefono'];
         $distrito = $_POST['distrito'];
 
-        if ($userModel->agregarUsuarioM($dni, $nombre, $apellido, $correo, $genero, $nacimiento, $celular, $distrito)) {
+        if ($userModel->agregarUsuarioM($dni, $nombre, $apellido, $correo, $genero, $nacimiento, $telefono, $distrito)) {
             session_start();
             $_SESSION['usuarioOk'] = true;
             header('Location: index.php?c=UsuariosController&a=index');

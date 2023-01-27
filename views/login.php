@@ -29,7 +29,7 @@ error_reporting(E_ALL ^ E_WARNING);
             <div class="container ">
                 <div class="row">
                     <div class="col d-flex align-items-center">
-                        <img src="views/asset/logo.png" alt="Logo" width="30" height="30">
+                        <img src="views/asset/logo.png" width="30" height="30">
                         <a class="navbar-brand px-2" href="#">Municipalidad de Guaymallén</a>
                     </div>
                 </div>

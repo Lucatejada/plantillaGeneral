@@ -120,11 +120,14 @@ if ($_SESSION['usuarioOk']) {
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Celular</label>
-                                        <input type="text" class="form-control" value="<?= $personas['celular'] ?>" aria-describedby="helpId" disabled>
+                                        <input type="text" class="form-control" value="<?= $personas['telefono'] ?>" aria-describedby="helpId" disabled>
                                     </div>
+                                    
                                     <div class="mb-3">
-
+                                        <label for="" class="form-label">Distrito</label>
+                                        <input type="text" class="form-control" value="<?= $personas['nombre_distrito'] ?>" aria-describedby="helpId" disabled>
                                     </div>
+                                    
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
