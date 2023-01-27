@@ -50,7 +50,7 @@
 
                 <!--  USUARIOS  -->
 
-                <p class="fs-6">Salud y Deporte </p>
+                <p class="fs-6"> Salud y Deporte </p>
 
                 <div class="row mb-3 justify-content-center">
                     <div class="col-lg-6">
@@ -58,7 +58,7 @@
                             <div class="card-header">Datos de Deporte</div>
                             <a class="text-success" href="index.php?c=EstadisticasController&a=mostrarRtas">
                                 <div class="card-body text-center">
-                                    ver mas
+                                    Ver datos de personas
                                     <h5 class="card-title fs-2"> </h5>
                                     <p class="card-text"></p>
                                 </div>

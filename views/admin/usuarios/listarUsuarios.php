@@ -61,6 +61,9 @@ if ($_SESSION['bajaOk']) {
 </script>
 
 <div class="container">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a type="button" href="index.php?c=EstadisticasController&a=index"> Volver al estadisticas</a>
+    </div>
 
     <div class="row justify-content-between">
         <div class="col-auto">
@@ -97,7 +100,7 @@ if ($_SESSION['bajaOk']) {
                         <td><?= $usuario['correo'] ?></td>
                         <td><?= $usuario['username'] ?></td>
                         <!-- <td><?= $usuario['tipo_usuario'] ?></td> -->
-                        
+
                         <td>
                             <div class="dropdown">
                                 <button class="btn btn-outline-primary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

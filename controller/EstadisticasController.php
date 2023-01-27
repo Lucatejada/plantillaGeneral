@@ -26,6 +26,7 @@ class EstadisticasController
 
     public static function mostrarRtas()
     {
+        echo '<title>Datos de Salud</title>';
         $estModel = new EstadisticasModel();
         $listaRespuestas = $estModel->mostrarRespuestas();
         require_once('plantilla.php');

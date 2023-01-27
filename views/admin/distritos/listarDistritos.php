@@ -12,28 +12,7 @@
 </script>
 
 <?php
-error_reporting(E_ALL ^ E_WARNING);
-if ($_SESSION['distritoCreado']) {
-?>
-    <div class="toast-container position-fixed top-0 end-0 p-3">
-
-        <div class="toast align-items-center text-bg-success border-0" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body">
-                    <i class="bi bi-check-circle"></i>
-                    El distrito ha sido creado
-                </div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-        </div>
-
-    </div>
-<?php
-    unset($_SESSION['distritoCreado']);
-}
-?>
-
-<?php
+error_reporting(0);
 if ($_SESSION['distritoEditado']) {
 ?>
     <div class="toast-container position-fixed top-0 end-0 p-3">
@@ -90,13 +69,12 @@ if ($_SESSION['distritoEliminado']) {
 <!--  -->
 
 <div class="container">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a type="button" href="index.php?c=EstadisticasController&a=index"> Volver al estadisticas</a>
+    </div>
     <div class="row mb-3 justify-content-between">
         <div class="col-auto">
             <p class="fs-6 fw-bold">Listado de distritos de Guaymallén</p>
-        </div>
-        <div class="col-auto">
-            <a role="button" class="link-danger" href="index.php?c=DistritosController&a=getEliminados">Distritos eliminados</a>
-            <a role="button" class="link-success" data-bs-toggle="modal" data-bs-target="#modalNuevoDistrito">Nuevo distrito</a>
         </div>
 
     </div>
@@ -153,7 +131,7 @@ if ($_SESSION['distritoEliminado']) {
                                         <label for="" class="form-label">Código Postal</label>
                                         <input type="text" class="form-control" name="cp" id="cp" value="<?= $distrito['codigo_postal'] ?>" aria-describedby="helpId" disabled>
                                     </div>
-                                    
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

@@ -11,6 +11,9 @@
 </script>
 
 <div class="container">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a type="button" href="index.php?c=EstadisticasController&a=index"> Volver al estadisticas</a>
+    </div>
     <p class="fs-6 fw-bold">
         Estadisticas
         <br>
@@ -22,8 +25,8 @@
                     <table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th scope="col">Nombre completo</th>
                                 <th scope="col">DNI</th>
+                                <th scope="col">Nombre completo</th>
                                 <th scope="col">El que se suscribe</th>
                                 <th scope="col">Accion</th>
                             </tr>
@@ -34,14 +37,14 @@
                             ?>
                                 <tr>
 
-                                    <td><?= $asistencia["nombre"] . " " . $asistencia["apellido"] ?></td>
                                     <td> <?= $asistencia["cuil"] ?></td>
-                                   
+                                    <td><?= $asistencia["nombre"] . " " . $asistencia["apellido"] ?></td>
+
                                     <td><?= $asistencia["nombre_tutor"] ?></td>
 
                                     <td>
                                         <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalMasInfo<?= $asistencia['cuil'] ?>">
-                                        <i class="bi bi-eye"></i> Ver más
+                                            <i class="bi bi-eye"></i> Ver más
                                         </button>
                                     </td>
 
