@@ -91,12 +91,21 @@ class EstadisticasModel extends Conexion
         $cantMujeres = $result->fetch_row()[0];
         return $cantMujeres;
     }
+
     public function contarPersonasNbM()
     {
         $sql = "SELECT count(*) from personas WHERE id_genero2 = 3;";
         $result = $this->conexion->query($sql);
         $cantNb = $result->fetch_row()[0];
         return $cantNb;
+    }
+
+    public function contarUsuariosSalud()
+    {
+        $sql = "SELECT count(*) from resultado";
+        $result = $this->conexion1->query($sql);
+        $registroSalud = $result->fetch_row()[0];
+        return $registroSalud;
     }
 
     public function contarUsuariosBajaM()

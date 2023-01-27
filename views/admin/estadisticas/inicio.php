@@ -58,9 +58,9 @@
                             <div class="card-header">Datos de Deporte</div>
                             <a class="text-success" href="index.php?c=EstadisticasController&a=mostrarRtas">
                                 <div class="card-body text-center">
-                                    Ver datos de personas
-                                    <h5 class="card-title fs-2"> </h5>
-                                    <p class="card-text"></p>
+
+                                    <h5 class="card-title fs-2"> <?= $registroSalud ?> </h5>
+                                    <p class="card-text "> Personas registadas en total</p>
                                 </div>
                             </a>
                         </div>
@@ -85,7 +85,7 @@
                         <div class="card border-success mb-3">
                             <div class="card-header">Cantidad</div>
                             <a class="text-success" href="index.php?c=DistritosController&a=index">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <h5 class="card-title fs-2"><?= $cantDistritos ?></h5>
                                     <p class="card-text">En total</p>
                                 </div>
@@ -124,7 +124,7 @@
                         <div class="card border-success mb-3">
                             <div class="card-header">Cantidad</div>
                             <a class="text-success" href="index.php?c=UsuariosController&a=index">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <h5 class="card-title fs-2"><?= $cantPersonas ?></h5>
                                     <p class="card-text">En total</p>
                                 </div>
@@ -140,7 +140,7 @@
                         <div class="card border-success mb-3">
                             <div class="card-header">Hombres</div>
                             <a class="text-success" href="index.php?c=UsuariosController&a=index">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <h4 class="card-title fs-2"><?= $cantHombres ?></h4>
                                     <p class="card-text">Total</p>
                                 </div>
@@ -154,7 +154,7 @@
                         <div class="card border-success mb-3">
                             <div class="card-header">Mujeres</div>
                             <a class="text-success" href="index.php?c=UsuariosController&a=index">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <h4 class="card-title fs-2"><?= $cantMujeres ?></h4>
                                     <p class="card-text">Total</p>
                                 </div>
@@ -168,7 +168,7 @@
                         <div class="card border-success mb-3">
                             <div class="card-header">No binario</div>
                             <a class="text-success" href="index.php?c=UsuariosController&a=index">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <h4 class="card-title fs-2"><?= $cantNb ?></h4>
                                     <p class="card-text">Total</p>
                                 </div>
@@ -191,7 +191,7 @@
                         <div class="card border-success mb-3">
                             <div class="card-header">Cantidad</div>
                             <a class="text-success" href="index.php?c=DistritosController&a=index">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <h5 class="card-title fs-2"><?= $cantDistritos ?></h5>
                                     <p class="card-text">En total</p>
                                 </div>

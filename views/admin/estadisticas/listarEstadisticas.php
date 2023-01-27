@@ -131,7 +131,7 @@
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="" class="form-label">Sugerencias</label>
-                                                    <input type="text" class="form-control" value="" <?= $asistencia["quince"] ?>" aria-describedby="helpId" placeholder="" disabled>
+                                                    <input type="text" class="form-control" value="<?= $asistencia["quince"] ?>" aria-describedby="helpId" placeholder="" disabled>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">

@@ -13,7 +13,8 @@ class EstadisticasController
 
 
         if ($_SESSION['rol'] != 1) {
-
+            
+            $registroSalud = $estModel->contarUsuariosSalud();
             $cantPersonas = $estModel->contarUsuariosM();
             $cantHombres = $estModel->contarPersonasMascM();
             $cantMujeres = $estModel->contarPersonasFemM();
