@@ -1,14 +1,34 @@
 <script>
     $(document).ready(function() {
         $('#tablaDinamica').DataTable({
-            paging: false,
-            lengthMenu: [50],
-            stateSave: true,
-            language: {
-                url: '../asset/Datatables/es.json'
-            }
+            resposive: "true",
+            dom: "B<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+                "<'row'<'col-sm-12'tr>>" +
+                "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+            buttons: [{
+                    extend: 'excelHtml5',
+                    text: '<i class="bi bi-file-earmark-spreadsheet"></i> ',
+                    titleAttr: 'Exportar a Excel',
+                    className: 'btn btn-success'
+                },
+                {
+                    extend: 'pdfHtml5',
+                    text: '<i class="bi bi-filetype-pdf"></i>',
+                    titleAttr: 'Exportar a Excel',
+                    className: 'btn btn-danger'
+                },
+                {
+                    extend: 'print',
+                    text: '<i class="bi bi-printer"></i>',
+                    titleAttr: 'Exportar a Excel',
+                    className: 'btn btn-secondary'
+                }
+            ],
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
+            },
         });
-    })
+    }, );
 </script>
 
 <?php
@@ -54,12 +74,6 @@ if ($_SESSION['distritoEliminado']) {
 }
 ?>
 
-<script>
-    const toastLiveExample = document.getElementById('liveToast')
-    const toast = new bootstrap.Toast(toastLiveExample)
-    toast.show()
-</script>
-
 <!--  -->
 <!--  -->
 <!--  -->
@@ -69,18 +83,17 @@ if ($_SESSION['distritoEliminado']) {
 <!--  -->
 
 <div class="container">
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
         <a type="button" href="index.php?c=EstadisticasController&a=index"> Volver al estadisticas</a>
     </div>
-    <div class="row mb-3 justify-content-between">
+    <div class="row mb-3 justify-content-between border rounded pt-3">
         <div class="col-auto">
             <p class="fs-6 fw-bold">Listado de distritos de Guaymallén</p>
         </div>
-
     </div>
     <div class="table-responsive-xxl pb-4">
+        <table class="table table-striped table-hover " id="tablaDinamica">
 
-        <table class="table table-striped table-hover" id="tablaDinamica">
             <thead>
                 <th>#</th>
                 <th>Nombre</th>

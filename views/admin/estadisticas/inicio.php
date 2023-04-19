@@ -36,7 +36,7 @@
     <div class="row mb-3">
 
         <div class=" mb-3">
-            <div class="rounded bg-light px-4 pt-3 pb-3">
+            <div class="border  rounded px-4 pt-3 pb-3">
                 <p class="fs-6">Bienvenido <?= $_SESSION['nombre'] ?></p>
             </div>
         </div>
@@ -46,7 +46,7 @@
 
         <div class="col-lg-6 mb-3">
 
-            <div class="rounded bg-light px-4 pt-3 pb-3">
+            <div class="border rounded px-4 pt-3 pb-3">
 
                 <!--  USUARIOS  -->
 
@@ -74,7 +74,7 @@
 
         <div class="col-lg-6 mb-3">
 
-            <div class="rounded bg-light px-4 pt-3 pb-3">
+            <div class="border rounded ed px-4 pt-3 pb-3">
 
                 <!--  Distritos  -->
 
@@ -113,7 +113,7 @@
 
         <div class="col-lg-6 mb-3">
 
-            <div class="rounded bg-light px-4 pt-3 pb-3">
+            <div class="border rounded ed px-4 pt-3 pb-3">
 
 
 
@@ -182,7 +182,7 @@
 
         <div class="col-lg-6 mb-3">
 
-            <div class="rounded bg-light px-4 pt-3 pb-3">
+            <div class="px-4 pt-3 pb-3 border rounded">
 
                 <p class="fs-6">Distritos de Guaymallén</p>
 
